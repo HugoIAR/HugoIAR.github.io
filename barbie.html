@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>♡ Barbie ♡ </title>
+<style>
+.body {
+background-color: #f18dbc;
+text-align: center;
+}
+
+.body__title{
+color: crimson;
+}
+.body__img{
+width: 100%;
+border-radius: 50%;
+}
+</style>
+</head>
+
+
+<body class="body">
+<h1 class="body__title"> ♡ ¿Quieres ir a ver barbie conmigo? ♡</h1>
+<img src="C:\Users\HugoIAR\OneDrive\Escritorio\barbie\barb1.jpeg" alt="Barbie" class="body__img">
+<button id="yes"> 💗 SI 💗 </button>
+<button id="no"> 😭 NO 😭 </button>
+<script>
+const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const siVamos = () => {
+      alert('💞Si vamos a ir juntos💞');
+      alert('😱Veremos Barbie😱');
+      location.href = 'https://www.youtube.com/watch?v=UCIYxv1T3FA';
+    };
+
+    const noVamos = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', siVamos);
+    vuttonNo.addEventListener('mouseover', noVamos);
+</script>
+</body>
+</html>
